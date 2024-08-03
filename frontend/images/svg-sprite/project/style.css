@@ -20,21 +20,43 @@ button {
   border: none;
   height: 30px;
   width: 30px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   padding: 0;
 }
 
-button.img-tag {
+button:hover svg {
+  stroke: red;
+}
+
+button.img-tag,
+button.svg-tag {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+button.svg-tag {
+  background-color: rgb(229, 169, 247);
+}
+
+button.svg-tag svg {
+  stroke: black;
+}
+
+button.svg-tag:hover svg {
+  stroke: red;
+}
+
+button img {
+  width: 100%;
+  height: 100%;
+}
+
 button.img-background {
   background-color: rgb(187, 247, 169);
-  background-image: url(./../svg-sprite/images/money.svg);
-  background-size: auto;
+  background-image: url(./../svg-sprite/images/star.svg);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
