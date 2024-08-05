@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  height: 100vh;
+}
+.square {
+  width: 500px;
+  height: 250px;
+  border: 2px solid;
+  text-align: center;
+}
+
+.text {
+  line-height: 100px;
+}
+
+/* так можно центрировать с помощью grid, создавая сетку от элемента  */
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}

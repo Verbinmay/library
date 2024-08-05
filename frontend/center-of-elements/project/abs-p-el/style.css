@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  /* так можно центрировать абсолютно центрированные элементы:*/
+  position: relative;
+  height: 100vh;
+}
+.square {
+  width: 500px;
+  height: 250px;
+  border: 2px solid;
+  text-align: center;
+  /* так можно центрировать абсолютно центрированные элементы: */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Это свойство позволяет перемещать элементы относительно их собственных размеров. */
+}
+
+.text {
+  line-height: 100px;
+}
