@@ -1,0 +1,56 @@
+{
+  "htmlElements": {
+    "grouping": {
+      "div": "Используется для группировки элементов, не оборачивает один элемент."
+    },
+    "text": {
+      "p": "Текстовый параграф.",
+      "span": "Короткий текст, 2-3 слова.",
+      "h1": "Главный заголовок, необходим даже если скрыт, важно для SEO.",
+      "h2": "Заголовок секций."
+    },
+    "media": {
+      "img": "Картинка."
+    },
+    "interaction": {
+      "button": "Кнопка для действия, но остается на странице.",
+      "link": "Переход на другую страницу."
+    },
+    "forms": {
+      "input": {
+        "text": "<input type='text'> - Однострочное текстовое поле."
+      },
+      "textarea": "<textarea placeholder='input'></textarea> - Многострочное текстовое поле.",
+      "form": "<form></form> - Форма для ввода данных.",
+      "submitReset": {
+        "html": "<form><input type='text'/><textarea placeholder='input'></textarea><input type='submit' value='Отправить'/><button type='reset'>Сбросить</button></form>",
+        "description": "Два способа отправки формы: отправка и сброс."
+      }
+    },
+    "lists": {
+      "select": {
+        "html": "<select><option value='1'>1</option><option value='2'>2</option></select>",
+        "description": "Выпадающий список."
+      },
+      "ordered": {
+        "html": "<ol><li></li><li></li></ol>",
+        "description": "Нумерованный список."
+      },
+      "unordered": {
+        "html": "<ul><li></li><li></li></ul>",
+        "description": "Маркированный список."
+      }
+    },
+    "navigation": {
+      "nav": "Навигационный тег."
+    },
+    "structural": {
+      "header": "Верхняя часть страницы.",
+      "section": "Секция контента.",
+      "footer": "Нижняя часть страницы."
+    }
+  },
+  "validation": {
+    "tool": "Проверка структуры: https://validator.w3.org"
+  }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>SVG-icons sprite</title>
+  </head>
+  <body>
+    <form action="handler.js" method="get">
+      <div>
+        <label for="user-name">Your name</label>
+        <input
+          id="user-name"
+          type="text"
+          name="user-name"
+          placeholder="your name"
+        />
+      </div>
+      <div>
+        <label for="user-email">Your email</label>
+        <input
+          id="user-email"
+          type="email"
+          name="user-email"
+          placeholder="your email"
+        />
+      </div>
+      <div>
+        <label for="user-password">Your password</label>
+        <input
+          id="user-password"
+          type="password"
+          name="user-password"
+          placeholder="your password"
+        />
+      </div>
+      <div>
+        <label for="user-age">Your age</label>
+        <input
+          id="user-age"
+          type="number"
+          name="user-age"
+          placeholder="your age"
+        />
+      </div>
+      <div>
+        <label for="user-avatar">Your avatar</label>
+        <input id="user-avatar" type="file" name="user-avatar" />
+      </div>
+      <fieldset>
+        <legend>Sex</legend>
+        <label
+          >Man
+          <input type="radio" name="user-sex" value="man" checked />
+        </label>
+        <label
+          >Woman
+          <input type="radio" name="user-sex" value="woman" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Technologies</legend>
+        <label
+          >HTML
+          <input type="checkbox" name="technology" value="html" checked />
+        </label>
+        <label
+          >CSS
+          <input type="checkbox" name="technology" value="css" />
+        </label>
+        <label
+          >JS
+          <input type="checkbox" name="technology" value="js" />
+        </label>
+      </fieldset>
+      <div>
+        <select name="city">
+          <option value="Moscow" selected>Moscow</option>
+          <option value="New York">New York</option>
+          <option value="London">London</option>
+        </select>
+      </div>
+      <div>
+        <label for="country">Country</label>
+        <input id="country" list="countriesList" name="country" />
+        <datalist id="countriesList">
+          <option value="Russia">Russia</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+        </datalist>
+      </div>
+      <textarea name="message" placeholder="Your message"></textarea>
+
+      <div contenteditable="true">Editable content</div>
+
+      <input type="submit" value="Send" />
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

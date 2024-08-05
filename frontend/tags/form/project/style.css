@@ -1,0 +1,17 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+div[contenteditable] {
+  width: 350px;
+  height: 100px;
+  border: 1px solid #ccc;
+  overflow: auto;
+}

@@ -1,0 +1,57 @@
+{
+  "lesson": {
+    "title": "HTML Lists",
+    "description": "Overview of different types of lists in HTML and their usage.",
+    "topics": [
+      {
+        "type": "Unordered Lists (ul)",
+        "description": "Used for listing items without any specific order.",
+        "example": {
+          "html": "<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n  <li>JavaScript</li>\n</ul>"
+        }
+      },
+      {
+        "type": "Ordered Lists (ol)",
+        "description": "Used for listing items in a specific order.",
+        "attributes": [
+          {
+            "name": "type",
+            "description": "Changes the type of numbering (e.g., A, a, I, i, 1)."
+          },
+          {
+            "name": "reversed",
+            "description": "Reverses the order of the list."
+          },
+          {
+            "name": "start",
+            "description": "Specifies the start value of the list."
+          }
+        ],
+        "examples": [
+          {
+            "description": "Basic ordered list",
+            "html": "<ol>\n  <li>HTML</li>\n  <li>CSS</li>\n  <li>JavaScript</li>\n</ol>"
+          },
+          {
+            "description": "Ordered list with attributes",
+            "html": "<ol type=\"A\" reversed start=\"2\">\n  <li>HTML</li>\n  <li>CSS</li>\n  <li>JavaScript</li>\n</ol>"
+          }
+        ]
+      },
+      {
+        "type": "Ordered Lists with Nested Elements",
+        "description": "Ordered lists that contain other HTML elements such as links and paragraphs.",
+        "example": {
+          "html": "<ol>\n  <li>\n    <a href=\"\">HTML</a>\n    <p>\n      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quos reprehenderit similique numquam? Voluptatum eveniet corporis sit voluptas nobis quod beatae, accusamus, fugiat ratione sequi cum facere quas maiores distinctio!\n    </p>\n  </li>\n  <li>CSS</li>\n  <li>JavaScript</li>\n</ol>"
+        }
+      },
+      {
+        "type": "Description Lists (dl)",
+        "description": "Used for defining terms and their descriptions.",
+        "example": {
+          "html": "<dl>\n  <dt>HTML</dt>\n  <dd>WELL DESCRIPTION</dd>\n</dl>"
+        }
+      }
+    ]
+  }
+}

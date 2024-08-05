@@ -1,0 +1,76 @@
+{
+  "form": {
+    "action": "handler.js",
+    "methods": {
+      "get": "для передачи данных в адресной строке",
+      "post": "для отправки данных в теле запроса"
+    }
+  },
+  "label": {
+    "two_methods": [
+      {
+        "method": "inline",
+        "html": "<label>Your name: <input type='text' name='user-name' placeholder='your name' /></label>"
+      },
+      {
+        "method": "block",
+        "html": "<div><label for='user-name'>Your name</label><input id='user-name' type='text' name='user-name' placeholder='your name' /></div>"
+      }
+    ]
+  },
+  "input_types": [
+    {
+      "type": "text",
+      "description": "обычное текстовое поле"
+    },
+    {
+      "type": "email",
+      "description": "проверка на наличие '@'"
+    },
+    {
+      "type": "password",
+      "description": "скрыть вводимые символы"
+    },
+    {
+      "type": "date",
+      "description": "выбор даты"
+    },
+    {
+      "type": "number",
+      "description": "ввод чисел"
+    },
+    {
+      "type": "file",
+      "description": "выбор файла",
+      "examples": [
+        "<input id='user-avatar' type='file' name='user-avatar' />",
+        "<input multiple id='user-avatar' type='file' name='user-avatar' />"
+      ]
+    },
+    {
+      "type": "radio",
+      "description": "выбрать одно из нескольких значений",
+      "example": "<div><label>Man<input type='radio' name='user-sex' value='man' checked /></label><label>Woman<input type='radio' name='user-sex' value='woman' /></label></div>"
+    },
+    {
+      "type": "checkbox",
+      "description": "выбор нескольких значений"
+    }
+  ],
+  "fieldset": {
+    "description": "группа элементов формы в рамке",
+    "example": "<fieldset><legend>Sex</legend><input type='checkbox' /></fieldset>"
+  },
+  "select": {
+    "description": "выпадающий список со значениями",
+    "example": "<select name='city'><option value='Moscow' selected>Moscow</option><option value='New York'>New York</option><option value='London'>London</option></select>"
+  },
+  "datalist": {
+    "description": "поле инпута с предложениями",
+    "example": "<div><label for='country'>Country</label><input id='country' list='countriesList' /><datalist id='countriesList'><option value='Russia'>Russia</option><option value='USA'>USA</option><option value='UK'>UK</option></datalist></div>"
+  },
+  "contenteditable": {
+    "description": "редактируемый div",
+    "example": "<div contenteditable='true'>Editable content</div>"
+  }
+}

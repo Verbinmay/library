@@ -1,0 +1,11 @@
+{
+  "favicon": {
+    "example": "<link rel=\"icon\" href=\"./favicon.ico\" />"
+  },
+  "links": [
+    "https://www.favicon.by/",
+    "https://realfavicongenerator.net/",
+    "https://perfecto-web.com/ru/"
+  ],
+  "advice": "лучше иметь иконки в png и в svg"
+}
