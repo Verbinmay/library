@@ -1,0 +1,39 @@
+.flex-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  /* Переносит обьекты на новую строку */
+  align-content: flex-start;
+  /* это работает только если flex-wrap: wrap; */
+  gap: 20px;
+  /* Расстояние между обьектами , но не от стенок*/
+
+  /* row-gap: 20px;
+  column-gap: 20px; */
+}
+
+.myDiv {
+  background-color: lightcoral;
+  width: 350px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Так можно выравнить все что угодно внутри блока, в данном случае текст */
+}
+
+.myText {
+  background-color: lightblue;
+  max-width: 500px;
+}
+.mySpan {
+  background-color: rgb(135, 250, 141);
+  width: 300px;
+}
+
+.myImg {
+  width: 250px;
+}

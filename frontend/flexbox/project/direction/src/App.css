@@ -1,0 +1,27 @@
+.flex-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: flex-start;
+  /*Расставляет на главной оси flex-direction */
+  align-items: flex-start;
+}
+.myDiv {
+  background-color: lightcoral;
+  height: 50px;
+}
+
+.myText {
+  background-color: lightblue;
+  max-width: 500px;
+  order: -1;
+  /* Порядок, но у всех 0 задан стандартно от  display: flex  */
+}
+.mySpan {
+  background-color: rgb(135, 250, 141);
+}
+.myImg {
+  height: 150px;
+  /* align-self: flex-end; */
+  /* Перемещает один обьект внутри контейнера */
+}

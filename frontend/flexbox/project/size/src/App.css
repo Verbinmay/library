@@ -1,0 +1,34 @@
+.flex-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.myDiv {
+  background-color: lightcoral;
+  flex-basis: 300px;
+  /*Он увеличивает ширину или высоту, зависит от главной оси flex-direction */
+  /* flex-grow: 2; */
+  /*Жадность*/
+  /* flex-shrink: 3; */
+  /*Скукоживание*/
+
+  /* flex: 3 2 300px; */
+  /* flex: shrink grow basis; */
+}
+
+.myText {
+  background-color: lightblue;
+  max-width: 500px;
+  flex-shrink: 5;
+  /* Это задает скорость сворачивания, другими словами изменения размера объекта, при изменении размера контейнера, а т.е. размера экрана  */
+}
+.mySpan {
+  background-color: rgb(135, 250, 141);
+  flex-grow: 1;
+  /*Увеличивает размер обьекта , отдавая ему свободное пространство после размещения всех объектов*/
+}
+.myImg {
+  height: 150px;
+}
