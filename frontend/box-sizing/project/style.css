@@ -1,0 +1,35 @@
+/* *,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+/* Очень важно везде и всегда */
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: lightblue;
+  border: 10px solid;
+  padding: 50px;
+}
+
+.bof:first-child {
+  box-sizing: content-box;
+
+  /* Не берет в расчет границы и паддинг, прибавляет к размеру элемента */
+}
+
+.box:nth-child(2) {
+  box-sizing: border-box;
+
+  /* Берет наш размер элемента, отнимает границы и паддинг */
+}
