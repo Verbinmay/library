@@ -1,0 +1,19 @@
+.section1 {
+  height: 100vh;
+  background-color: beige;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  /* border: 2px solid red; */
+  flex-wrap: wrap;
+}
+
+.img,
+.text-wrap {
+  max-width: 500px;
+  width: 100%;
+}
