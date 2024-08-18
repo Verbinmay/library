@@ -1,0 +1,17 @@
+.elem {
+  width: calc(100% / 3);
+  height: calc(50vh + 100px);
+  /* transform: rotate(calc(10deg * 5)); */
+  background-color: #a4ff799e;
+  line-height: calc(1.2 * 2);
+}
+
+@media screen and (max-width: calc(768px - 100px)) {
+  .elem {
+    width: calc(100% / 2);
+  }
+}
+
+/* Когда мы используем сложение или вычитание, нужны единицы
+При делении у делителя никаких единиц быть не должно
+При умножении также у чего-то единиц быть не должно */
