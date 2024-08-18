@@ -1,0 +1,24 @@
+.elem1 {
+  width: 300px;
+  height: 300px;
+  background-color: #a4ff799e;
+  /* margin: 50px; */
+  /* margin 50px 100px 70px;
+  так можно сделать , если сверху, по бокам, снизу */
+  /* margin: 0 auto; */
+  /* Удобное центрирование блока */
+  /* margin: -50px; */
+  margin-bottom: 100px;
+
+  /*h1 отталкиевается либо от окна браузера, либо от другого элемента, можно исправить падингами или бордером*/
+}
+
+.elem2 {
+  width: 300px;
+  height: 300px;
+  background-color: #ff79a49e;
+  /* margin-top: 50px; */
+  /* Схлопывание марджинов */
+
+  padding: 50px;
+}
