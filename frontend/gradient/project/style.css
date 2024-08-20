@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  height: 400px;
+  width: 400px;
+  border: 20px solid silver;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 800;
+  /* background-image: linear-gradient(pink, blue); */
+
+  /* background-image: linear-gradient(to right, pink, blue); */
+
+  /* background-image: linear-gradient(to top right, pink, blue); */
+
+  /* background-image: linear-gradient(134deg, pink, blue); */
+
+  /* background-image: linear-gradient(134deg, pink 10%, blue 70%); */
+  /* не занятое пространство под смешение  */
+
+  /* background-image: linear-gradient(
+    134deg,
+    pink 10%,
+    blue 40%,
+    blue 70%,
+    green 80%
+  ); */
+
+  /* background-image: radial-gradient(pink 20%, blue 90%); */
+
+  /* background-image: radial-gradient(circle, pink 20%, blue 90%); */
+
+  /* background-image: radial-gradient(circle at top, pink 20%, blue 90%); */
+
+  /* background-image: radial-gradient(circle at top left, pink 20%, blue 90%); */
+
+  /* background-image: radial-gradient(20% 50% at top left, pink 20%, blue 90%); */
+
+  /* background-image: radial-gradient(
+    circle closest-side at 50px 100px,
+    pink,
+    blue
+  ); */
+
+  /* background-image: radial-gradient(
+    circle farthest-side at 50px 100px,
+    pink,
+    blue
+  ); */
+
+  /* background-image: repeating-linear-gradient(
+    120deg,
+    pink,
+    pink 20px,
+    blue 20px,
+    blue 40px
+  ); */
+
+  /* background-image: repeating-radial-gradient(
+    circle,
+    pink,
+    pink 20px,
+    blue 20px,
+    blue 40px
+  ); */
+
+  /* border-image: repeating-radial-gradient(
+      circle,
+      pink,
+      pink 20px,
+      blue 20px,
+      blue 40px
+    )
+    4; */
+
+  /* border-image: repeating-linear-gradient(130deg, pink, blue) 4; */
+
+  background-image: linear-gradient(130deg, pink, blue);
+  color: transparent;
+  -webkit-background-clip: text;
+}
