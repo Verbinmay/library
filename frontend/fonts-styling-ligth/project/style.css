@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+*::selection {
+  color: #000;
+  background-color: #d74747;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+p {
+  max-width: 70%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+input {
+  width: 500px;
+  height: 40px;
+  font-size: 20px;
+  padding: 0 15px;
+}
+
+span {
+  user-select: none;
+  /* Не выделяет текст и не копируется , но в селекте не работает*/
+}
