@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 20px 0;
+  display: flex;
+}
+
+a {
+  margin: 20px;
+}
+
+section {
+  height: 80vh;
+  background-color: rgb(128, 128, 255);
+  margin: 5px 0;
+  padding: 50px;
+  display: none;
+  /*показывать при выборе*/
+}
+
+section:target {
+  background-color: rgb(255, 128, 128);
+  display: block;
+}
+
+/* section:hover h3 {
+  font-size: 30px;
+  color: blue;
+} */
+
+/* section:target h3 {
+  font-size: 30px;
+  color: blue;
+} */

@@ -1,0 +1,76 @@
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+/* ul li:first-child {
+  color: red;
+}
+
+div h2:first-child {
+  color: blue;
+} */
+
+/* p:first-of-type {
+  color: green;
+}
+
+h2:last-of-type {
+  color: yellow;
+} */
+
+/* p:nth-child(4) {
+  color: red;
+}
+
+p :nth-of-type(3) {
+  color: blue;
+} */
+
+/* div :nth-child(odd) {
+  color: green;
+} */
+/* четное */
+
+/* div :nth-child(even) {
+  color: red;
+} */
+/* нечетное */
+/* 
+div :nth-child(3n + 1) {
+  color: green;
+
+} */
+/* первый ребенок , через три элемента */
+
+/* div :nth-child(n + 2) {
+  color: red;
+} */
+/* все кроме первого */
+
+/* div :nth-child(-n + 3) {
+  color: blue;
+} */
+/* первые три элемента */
+
+/* p:nth-last-of-type(2) {
+  color: red;
+} */
+/* второй с конца */
+
+/* li :only-of-type {
+  color: green;
+} */
+/* только если единственный элемент */
+
+/* li:empty {
+  display: none;
+} */
+
+/* находит все пустые элементы и скрывает их */
