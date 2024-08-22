@@ -1,0 +1,45 @@
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: blue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elem-transform {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bc1010;
+  transition: 0.2s;
+}
+
+.elem-transform:hover {
+  /* transform: translate(150px, 50px); */
+  /* transform: rotate(45deg); */
+  transform-origin: top left;
+  /* точка приема эффекта у элемента */
+  /* transform: scale(2); */
+  /* Увеличение размера элемента в 2 раза */
+  /* transform: skew(30deg, 30deg);
+  transform: skewX(30deg); */
+  /* Наклон элемента по оси X */
+
+  /* transform: matrix(1, 0.5, 0, 1, 0, 0) rotate(45deg); */
+
+  
+
+}
+
+.elem {
+  width: 350px;
+  height: 350px;
+  background-color: #07a2f5;
+}

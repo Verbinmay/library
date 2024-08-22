@@ -1,0 +1,49 @@
+div {
+  width: 180px;
+  height: 180px;
+  color: #edeaea;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+div:first-child {
+  background-color: #bc1010;
+  position: relative;
+  left: 10%;
+  /* Так центр не выйдет настроить */
+  top: 100px;
+  /* проценты не работают по горизонтали */
+}
+div:nth-child(2) {
+  background-color: #07a2f5;
+  position: absolute;
+  /* он не участвует в потоке, словно ушел на другой уровень, он ищет  position: relative у родителя, от него и считает */
+  right: 50px;
+  bottom: 50px;
+  z-index: 20;
+}
+div:nth-child(3) {
+  background-color: #f5e507;
+  position: fixed;
+  /* тоже вырвался из потока, но он всегда там, где его разместили изначально, он вне контента */
+  bottom: 0;
+  right: 0;
+}
+div:nth-child(4) {
+  background-color: #07f5a2;
+  position: sticky;
+  top: 0;
+
+  /* он как заголовок таблицы , остается, а контент крутится , если элемент один, то не заработает*/
+}
+section {
+  height: 80vh;
+  background-color: #f08c8c;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+/* чтобы управлять наложением, можно использовать z-index, чем больше значение, тем выше элемент */
