@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 60px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgb(237, 123, 123);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(233, 245, 6);
+  border: 5px solid rgb(237, 123, 123);
+  box-shadow: inset 0 0 3px rgb(255, 19, 19);
+  border-radius: 25px;
+  background-image: url(./images/fire.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+*::-webkit-scrollbar-button:start {
+  background-color: rgb(0, 208, 255);
+  background-image: url(./images/fire.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid;
+}
+*::-webkit-scrollbar-button:end {
+  background-color: rgb(20, 40, 255);
+  background-image: url(./images/fire.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid;
+}
+
+*::-webkit-scrollbar-button:horizontal:start {
+  background: rgb(14, 249, 131) url(./images/fire.svg) center no-repeat;
+}
+
+*::-webkit-scrollbar-track-piece:end {
+  background-color: rgb(8, 60, 0);
+}
+
+*::-webkit-scrollbar-corner {
+  background-color: rgb(137, 21, 183);
+}
+
+/* --------*/
+/* /*{
+  scrollbar-width: thin;
+  scrollbar-color: rgb(233, 245, 6) rgb(237, 123, 123);
+} */
+
+section {
+  height: 93vh;
+  background-color: rgb(128, 128, 255);
+  margin: 20px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-child(3n + 2) {
+  background-color: rgb(255, 128, 128);
+}
+section:nth-child(3n + 3) {
+  background-color: rgb(127, 63, 63);
+}
+
+.box {
+  height: 400px;
+  width: 600px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 1.5rem;
+  overflow: auto;
+  /* скролл */
+
+  display: flex;
+}
+
+img {
+  width: 250px;
+}
+
+p {
+  min-width: 500px;
+  font-family: sans-serif;
+}
