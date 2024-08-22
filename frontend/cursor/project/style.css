@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  /* cursor: pointer; */
+  /* пальчик */
+  /* cursor: not-allowed; */
+  /* запрет на клик */
+  /* cursor: grab; */
+  /* рука для drag and drop оч удобно*/
+  cursor: url(./images/fire.svg), pointer;
+  /* свой курсор */
+}
+
+/* button:active {
+  cursor: grabbing;
+  /* рука для drag and drop оч удобно хватает*/
+} */
