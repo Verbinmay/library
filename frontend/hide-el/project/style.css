@@ -1,0 +1,73 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: aquamarine;
+}
+.box {
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  /* position: relative; */
+  overflow: hidden;
+
+  /* если что то выйдет за пределы, то пропадет */
+}
+
+/* .box:hover .elem:nth-child(4n + 1) {
+  transform: translateX(0);
+} */
+
+.elem {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.elem:nth-child(4n + 1) {
+  background-color: rgba(172, 81, 81, 0.788);
+  /* display: none; */
+  /* элемент пропал и место за собой не сохранил */
+
+  /* visibility: hidden; */
+  /* элемент пропал, но место за собой сохранил */
+
+  /* opacity: 0; */
+  /* элемент пропал, но место за собой сохранил */
+
+  /* clip-path: polygon(0 0, 0 0, 0 0); */
+  /* интересное св-во, основывается на вырезании обьекта по форме, тут мы просто превращаем форму в точку*/
+
+  /* height: 0;
+  width: 0;
+  overflow: hidden; */
+  /* элемент пропал, содежимое скрылось, место не сохранилось*/
+
+  /* position: absolute;
+  top: -1000px; */
+  /* элемент перешел на другой слой и улетел за пределы окна */
+
+  /* position: relative;
+    top: -100%; */
+  /* элемент пропал, но место за собой не сохранил */
+
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+.elem:nth-child(4n + 2) {
+  background-color: rgba(39, 69, 98, 0.663);
+}
+
+.elem:nth-child(4n + 3) {
+  background-color: rgba(39, 98, 39, 0.788);
+}
+.elem:nth-child(4n + 4) {
+  background-color: rgba(23, 6, 99, 0.788);
+}
